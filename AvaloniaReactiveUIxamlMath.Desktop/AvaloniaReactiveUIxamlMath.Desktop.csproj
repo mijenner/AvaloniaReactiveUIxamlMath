@@ -11,8 +11,6 @@
 
   <ItemGroup>
     <PackageReference Include="Avalonia.Desktop" Version="11.0.4" />
-    <PackageReference Include="AvaloniaMath" Version="2.1.0" />
-    <PackageReference Include="ScottPlot.Avalonia" Version="4.1.67" />
   </ItemGroup>
 
   <ItemGroup>

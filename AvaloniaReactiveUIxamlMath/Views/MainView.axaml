@@ -14,7 +14,13 @@
     <vm:MainViewModel />
   </Design.DataContext>
 
-  <StackPanel>
+  <Grid
+    RowDefinitions="Auto, *"
+    >
+    
+  <StackPanel
+    Grid.Row="0"
+    >
     <Border Margin="5"
       CornerRadius="10"
       Background="LightBlue">
@@ -44,7 +50,12 @@
         Margin="10"
         Formula="\left(x^2 + 2 \cdot x + 2\right) = 0" />
     </Grid>
-      <ScottPlot:AvaPlot
-        Name="AvaPlot1"/>
   </StackPanel>
+
+    <ScottPlot:AvaPlot
+        Grid.Row="1"     
+        Name="AvaPlot1"/>
+
+  </Grid>
+
 </UserControl>
